@@ -4,7 +4,8 @@ Shares Rails i18n translations with your javascripts without duplicating content
 
 ## Usage
 
-- Install it `npm install rails-translations-webpack-plugin --save-dev`
+- Install it with `npm install rails-translations-webpack-plugin --save-dev`
+- To access the generated translations remember to install also `json-loader` with `npm install json-loader --save-dev`
 - Require it in your `webpack.config.js`:
 
   ```js
@@ -19,6 +20,19 @@ Shares Rails i18n translations with your javascripts without duplicating content
       root       : "src"
     })
   ]
+  ```
+- Add JSON loader in your loaders block:
+
+  ```js
+  module: {
+    loaders: [
+      {
+        include : "src",
+        test    : /\.json$/,
+        loader  : 'json-loader'
+      }
+    ]
+  }
   ```
 - Now you can require the translations from your code. E.g.
 
