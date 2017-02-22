@@ -6,10 +6,12 @@ Shares Rails i18n translations with your javascripts without duplicating content
 
 - Install it `npm install rails-translations-webpack-plugin --save-dev`
 - Require it in your `webpack.config.js`:
+
   ```js
   const RailsTranslationsPlugin = require("rails-translations-webpack-plugin");
   ```
 - Add it to your plugins block. See below for options documentation:
+
   ```js
   plugins: [
     new RailsTranslationsPlugin({
@@ -19,6 +21,7 @@ Shares Rails i18n translations with your javascripts without duplicating content
   ]
   ```
 - Now you can require the translations from your code. E.g.
+
   ```js
   // somewhere inside your javascripts
   const translations = require("translations.json");
