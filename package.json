@@ -1,0 +1,38 @@
+{
+  "name": "rails-translations-webpack-plugin",
+  "version": "1.0.0",
+  "author": "Nicola Racco",
+  "description": "Shares Rails i18n translations with your javascripts without duplicating contents",
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikamai/rails-translations-webpack-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "plugin",
+    "rails",
+    "i18n"
+  ],
+  "bugs": {
+    "url": "https://github.com/mikamai/rails-translations-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/mikamai/rails-translations-webpack-plugin#readme",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint . ./lib/",
+    "test": "mocha test --recursive",
+    "watch-test": "mocha test --recursive --watch"
+  },
+  "main": "lib/index.js",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "glob": "^7.1.1",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "virtual-module-webpack-plugin": "^0.1.3",
+    "yaml-js": "^0.1.4"
+  }
+}
