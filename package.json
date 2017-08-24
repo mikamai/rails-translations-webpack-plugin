@@ -1,6 +1,6 @@
 {
   "name": "rails-translations-webpack-plugin",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "Nicola Racco",
   "description": "Shares Rails i18n translations with your javascripts without duplicating contents",
   "engines": {
