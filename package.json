@@ -30,7 +30,7 @@
   "dependencies": {
     "glob": "^7.1.1",
     "lodash": "^4.17.4",
-    "virtual-module-webpack-plugin": "^0.3.0",
+    "virtual-module-webpack-plugin": "^0.4.1",
     "yaml-js": "^0.1.4"
   },
   "devDependencies": {
