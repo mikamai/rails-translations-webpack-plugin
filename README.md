@@ -9,7 +9,7 @@ Shares Rails i18n translations with your javascripts without duplicating content
 - Require it in your `webpack.config.js`:
 
   ```js
-  const RailsTranslationsPlugin = require("rails-translations-webpack-plugin");
+  const RailsTranslationsPlugin = require("rails-translations-webpack-plugin")
   ```
 - Add it to your plugins block. See below for options documentation:
 
@@ -21,24 +21,11 @@ Shares Rails i18n translations with your javascripts without duplicating content
     })
   ]
   ```
-- Add JSON loader in your loaders block:
-
-  ```js
-  module: {
-    loaders: [
-      {
-        include : "src",
-        test    : /\.json$/,
-        loader  : 'json-loader'
-      }
-    ]
-  }
-  ```
 - Now you can require the translations from your code. E.g.
 
   ```js
   // somewhere inside your javascripts
-  const translations = require("translations.json");
+  const translations = require("translations.json")
   console.log(`English translation for hello.world key: ${translations["en"]["hello.world"]}`)
   ```
 
